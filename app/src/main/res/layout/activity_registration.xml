@@ -3,12 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="30dp"
-    android:background="@color/background"
-    tools:context=".MainActivity">
-
+    android:layout_margin="20dp"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:context=".registration">
 
 
 
@@ -82,6 +81,7 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="20sp"
+            android:id="@+id/emailid"
 
             android:hint="Email-id" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -102,6 +102,7 @@
             android:inputType="text"
             android:textSize="20sp"
 
+            android:id="@+id/passid1"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
     / android:onClick="registerUser"/>
@@ -120,6 +121,7 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="20sp"
+            android:id="@+id/passwordid2"
 
             android:hint="Re-Password" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -137,7 +139,7 @@
         android:background="@drawable/btn_shape"
         android:text="Register"
         android:layout_marginTop="30dp"
-       />
+        />
 
 
 </LinearLayout>
